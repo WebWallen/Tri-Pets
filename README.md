@@ -4,4 +4,4 @@ Visit the live website to see the current look and feel (hint: the best stuff is
 
 Don't expect daily commits (I'm merely adding the code here so I don't have to explain my lack of green squares in future interviews).
 
-But I WILL update the HTML, CSS, and JS files once or twice a month. Ditto for the website associated with my mental health memoir, Madness and Me.
+But I WILL update the HTML, CSS, and JS files on occasion. Ditto for the website associated with my mental health memoir, Madness and Me.
