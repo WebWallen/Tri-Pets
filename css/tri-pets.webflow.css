@@ -67,13 +67,14 @@ p {
 
 .pet-name {
   font-size: 22px;
+  line-height: 1.4;
   text-align: center;
 }
 
 .shelter-contact-info {
-  margin: 30px;
+  margin: 20px 30px;
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.4;
   text-align: center;
 }
 
@@ -158,7 +159,7 @@ p {
 
 .pet-description {
   font-size: 18px;
-  line-height: 1.5;
+  line-height: 1.4;
   text-align: center;
 }
 
@@ -171,12 +172,14 @@ p {
   -ms-flex-align: center;
   align-items: center;
   font-size: 22px;
+  line-height: 1.4;
 }
 
 .top-header {
+  margin-top: 0px;
   margin-bottom: 20px;
   font-size: 40px;
-  line-height: 1.5;
+  line-height: 1.4;
 }
 
 .utility-page-wrap {
@@ -209,13 +212,15 @@ p {
   -webkit-flex-direction: column;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
-}
-
-.scroll-to-top-link {
-  display: none;
-  color: #000;
-  text-decoration: none;
 }
 
 .feature-image {
@@ -224,10 +229,6 @@ p {
   margin-right: auto;
   margin-left: auto;
   padding-bottom: 20px;
-}
-
-.scroll-to-top-header {
-  display: none;
 }
 
 .article-title {
@@ -313,6 +314,9 @@ p {
 }
 
 .about-image.feature {
+  width: auto;
+  height: auto;
+  min-width: 75%;
   margin-left: auto;
 }
 
@@ -352,9 +356,17 @@ p {
   text-align: center;
 }
 
+.credits.cats {
+  line-height: 1.4;
+}
+
 .credits.cats.fees {
   margin-top: 10px;
   margin-bottom: 0px;
+}
+
+.credits.cats.fees.dog-adopt-button {
+  margin-bottom: 30px;
 }
 
 .credits.cats {
@@ -392,7 +404,8 @@ p {
   padding-right: 10px;
   padding-left: 10px;
   font-size: 16px;
-  text-align: left;
+  line-height: 1.5;
+  text-align: center;
 }
 
 .read-adoption-guide {
@@ -400,7 +413,7 @@ p {
   max-width: 35%;
   margin: 40px auto;
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.4;
   font-weight: 700;
   text-align: center;
 }
@@ -425,6 +438,7 @@ p {
 
 .facebook.home {
   margin-top: 40px;
+  margin-bottom: 20px;
   padding-left: 100px;
 }
 
@@ -434,9 +448,11 @@ p {
 }
 
 .adoption-fees {
+  margin-top: 40px;
   margin-bottom: 0px;
   padding-right: 10px;
   padding-left: 10px;
+  line-height: 1.4;
   text-align: center;
 }
 
@@ -445,6 +461,7 @@ p {
   margin-bottom: 0px;
   padding-right: 10px;
   padding-left: 10px;
+  line-height: 1.4;
   text-align: center;
 }
 
@@ -461,6 +478,76 @@ p {
   padding-bottom: 10px;
 }
 
+.shelter-hours {
+  margin-top: 40px;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.share-logos {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-flex-wrap: nowrap;
+  -ms-flex-wrap: nowrap;
+  flex-wrap: nowrap;
+  -webkit-align-content: center;
+  -ms-flex-line-pack: center;
+  align-content: center;
+}
+
+.share-logos.pets {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+}
+
+.share-logos.blog-end {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.sharing-link {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 33.3%;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.social-media-app {
+  display: block;
+  max-width: 30%;
+}
+
+.image {
+  width: 100%;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 auto;
+  -ms-flex: 0 auto;
+  flex: 0 auto;
+}
+
+.paragraph {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 @media screen and (max-width: 991px) {
   .pets-grid {
     grid-column-gap: 20px;
@@ -475,6 +562,11 @@ p {
   .pet-name {
     font-size: 18px;
     text-align: center;
+  }
+
+  .shelter-contact-info {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
 
   .adopt-button {
@@ -504,22 +596,16 @@ p {
     font-size: 35px;
   }
 
-  .scroll-to-top-link {
-    color: #000;
-  }
-
-  .scroll-to-top-header {
-    display: block;
-    margin-top: 20px;
-    text-align: center;
-  }
-
   .blog-image {
     max-width: 80%;
   }
 
   .blog-button {
     width: 40%;
+  }
+
+  .about-image.feature {
+    min-width: 80%;
   }
 
   .credits {
@@ -536,6 +622,10 @@ p {
 
   .author-bio-image {
     max-width: 70%;
+  }
+
+  .author-bio-paragraph {
+    text-align: center;
   }
 
   .read-adoption-guide {
@@ -560,6 +650,10 @@ p {
 
   .tri-pets.home {
     margin-top: 40px;
+  }
+
+  .social-media-app {
+    max-width: 50%;
   }
 }
 
@@ -617,7 +711,7 @@ p {
   .shelter-contact-info {
     margin: 20px 5px;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.4;
   }
 
   .sticky-nav {
@@ -627,6 +721,10 @@ p {
 
   .nav-grid {
     text-align: center;
+  }
+
+  .nav-link {
+    margin-right: 20px;
   }
 
   .adopt-button {
@@ -648,26 +746,9 @@ p {
   }
 
   .top-header {
-    font-size: 25px;
-    line-height: 1.5;
-  }
-
-  .scroll-to-top-link {
-    display: block;
-    color: #000;
-    text-decoration: none;
-  }
-
-  .scroll-to-top-link.w--current {
-    font-size: 22px;
-  }
-
-  .scroll-to-top-header {
-    display: block;
     margin-top: 20px;
-    margin-bottom: 20px;
-    line-height: 1.5;
-    text-align: center;
+    font-size: 23px;
+    line-height: 1.4;
   }
 
   .article-title {
@@ -684,6 +765,10 @@ p {
 
   .blog-button {
     width: 50%;
+  }
+
+  .about-image.feature {
+    min-width: 100%;
   }
 
   .credits {
@@ -716,6 +801,10 @@ p {
     max-width: 80%;
   }
 
+  .author-bio-paragraph {
+    text-align: center;
+  }
+
   .read-adoption-guide {
     max-width: 75%;
     margin-top: 60px;
@@ -742,6 +831,23 @@ p {
   .tri-pets.about {
     margin-top: 40px;
   }
+
+  .shelter-hours {
+    margin-top: 0px;
+  }
+
+  .share-logos.pets {
+    margin-top: 40px;
+    margin-bottom: 60px;
+  }
+
+  .share-logos.pets.about {
+    margin-top: 60px;
+  }
+
+  .social-media-app {
+    max-width: 50%;
+  }
 }
 
 @media screen and (max-width: 479px) {
@@ -759,6 +865,7 @@ p {
   }
 
   .pet-image {
+    width: 100%;
     margin-right: auto;
     margin-left: auto;
   }
@@ -825,27 +932,9 @@ p {
 
   .top-header {
     margin-bottom: 0px;
-    font-size: 16px;
-    line-height: 20px;
-    text-align: center;
-  }
-
-  .scroll-to-top-link {
-    color: #000;
-    text-decoration: none;
-  }
-
-  .scroll-to-top-link.w--current {
-    font-size: 18px;
-  }
-
-  .scroll-to-top-header {
-    margin-top: 0px;
-    margin-bottom: 0px;
-    padding-right: 15px;
-    padding-left: 15px;
-    font-size: 18px;
+    font-size: 15.943px;
     line-height: 1.5;
+    text-align: center;
   }
 
   .article-title {
@@ -870,8 +959,13 @@ p {
     font-size: 34px;
   }
 
+  .about-image.feature {
+    height: auto;
+    min-width: 100%;
+  }
+
   .about-subheader {
-    font-size: 30px;
+    font-size: 25px;
   }
 
   .mobile-message {
@@ -924,6 +1018,9 @@ p {
 
   .author-bio-paragraph {
     margin-bottom: 20px;
+    padding-right: 5px;
+    padding-left: 5px;
+    line-height: 1.5;
   }
 
   .body {
@@ -974,6 +1071,43 @@ p {
 
   .tri-pets.home {
     margin-top: 0px;
+  }
+
+  .share-logos {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+
+  .share-logos.pets {
+    margin-top: 20px;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .share-logos.pets.about {
+    margin-top: 60px;
+  }
+
+  .sharing-link {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .social-media-app {
+    max-width: 50%;
   }
 }
 
@@ -1035,6 +1169,28 @@ p {
     grid-column-end: span 1;
     -ms-grid-row-align: start;
     align-self: start;
+  }
+
+  #w-node-e136b6c280f8-668660da {
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+  }
+
+  #w-node-e136b6c280fa-668660da {
+    -ms-grid-row: span 1;
+    grid-row-start: span 1;
+    -ms-grid-row-span: 1;
+    grid-row-end: span 1;
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
   }
 
   #w-node-e0e09ba14c7d-668660da {
@@ -1125,72 +1281,6 @@ p {
     grid-column-end: span 1;
   }
 
-  #w-node-57f70e28840f-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-57f70e288411-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-9e2d16907b66-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-9e2d16907b68-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-488428a6e16b-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-488428a6e16d-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
   #w-node-bd0ea8544a7d-668660da {
     -ms-grid-row: span 1;
     grid-row-start: span 1;
@@ -1203,50 +1293,6 @@ p {
   }
 
   #w-node-bd0ea8544a7f-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-e136b6c280f8-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-e136b6c280fa-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-0f07424320ef-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-0f07424320f1-668660da {
     -ms-grid-row: span 1;
     grid-row-start: span 1;
     -ms-grid-row-span: 1;
@@ -1313,50 +1359,6 @@ p {
   }
 
   #w-node-44c84d1cd678-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-57f358d6afec-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-57f358d6afee-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-1d51c1da3461-668660da {
-    -ms-grid-row: span 1;
-    grid-row-start: span 1;
-    -ms-grid-row-span: 1;
-    grid-row-end: span 1;
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-1d51c1da3463-668660da {
     -ms-grid-row: span 1;
     grid-row-start: span 1;
     -ms-grid-row-span: 1;
@@ -1446,6 +1448,13 @@ p {
     justify-self: center;
   }
 
+  #w-node-e136b6c280f5-668660da {
+    -ms-grid-column: span 1;
+    grid-column-start: span 1;
+    -ms-grid-column-span: 1;
+    grid-column-end: span 1;
+  }
+
   #w-node-e0e09ba14c7a-668660da {
     -ms-grid-column: span 1;
     grid-column-start: span 1;
@@ -1474,42 +1483,7 @@ p {
     grid-column-end: span 1;
   }
 
-  #w-node-57f70e28840c-668660da {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-9e2d16907b63-668660da {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-488428a6e168-668660da {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
   #w-node-bd0ea8544a7a-668660da {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-e136b6c280f5-668660da {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-0f07424320ec-668660da {
     -ms-grid-column: span 1;
     grid-column-start: span 1;
     -ms-grid-column-span: 1;
@@ -1537,75 +1511,12 @@ p {
     grid-column-end: span 1;
   }
 
-  #w-node-57f358d6afe9-668660da {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-1d51c1da345e-668660da {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
   #w-node-2475e80f1b31-7c6adada {
     -ms-grid-column-align: center;
     justify-self: center;
   }
 
-  #w-node-05af21439774-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-2c0613aab71c-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-0038d9015d3f-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-19b464906315-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-88cb2cf6725f-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-4856fe7028a0-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-19b3c55dd496-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-b5af7a5d2bea-7c6adada {
+  #w-node-176f0ab59528-7c6adada {
     -ms-grid-column: span 1;
     grid-column-start: span 1;
     -ms-grid-column-span: 1;
@@ -1619,42 +1530,14 @@ p {
     grid-column-end: span 1;
   }
 
-  #w-node-19c6443dac7d-7c6adada {
+  #w-node-05af21439774-7c6adada {
     -ms-grid-column: span 1;
     grid-column-start: span 1;
     -ms-grid-column-span: 1;
     grid-column-end: span 1;
   }
 
-  #w-node-176f0ab59528-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-f011b623e5d9-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-fa64f674d079-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-13e6d24145f1-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-7a1e70779a57-7c6adada {
+  #w-node-4856fe7028a0-7c6adada {
     -ms-grid-column: span 1;
     grid-column-start: span 1;
     -ms-grid-column-span: 1;
@@ -1668,55 +1551,6 @@ p {
     grid-column-end: span 1;
   }
 
-  #w-node-180cd5181d90-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-c3f7ad3525bd-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-6dde69b84bc5-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-daee552d24f3-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-deb5b0af5d35-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-2285bb0b8572-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-67c0eb6c9239-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
   #w-node-a5ccbb4d5f0d-7c6adada {
     -ms-grid-column: span 1;
     grid-column-start: span 1;
@@ -1724,28 +1558,14 @@ p {
     grid-column-end: span 1;
   }
 
-  #w-node-68ab1eacca53-7c6adada {
+  #w-node-1f11a25cb87a-7c6adada {
     -ms-grid-column: span 1;
     grid-column-start: span 1;
     -ms-grid-column-span: 1;
     grid-column-end: span 1;
   }
 
-  #w-node-380f2477ae3c-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-a4e4fab18bf7-7c6adada {
-    -ms-grid-column: span 1;
-    grid-column-start: span 1;
-    -ms-grid-column-span: 1;
-    grid-column-end: span 1;
-  }
-
-  #w-node-2f133a59ed0d-7c6adada {
+  #w-node-389e3110129b-7c6adada {
     -ms-grid-column: span 1;
     grid-column-start: span 1;
     -ms-grid-column-span: 1;

@@ -6,6 +6,6 @@ Visit the live website to see the current look and feel (hint: the best stuff is
 
 https://www.tripets.org
 
-This website has reached 21,000+ visitors since it's launch. See the case study below for takeaways:
+This website has reached 23,000+ visitors since it's launch. See the case study below for takeaways:
 
 https://www.linkedin.com/pulse/how-i-grew-pet-adoption-website-from-0-10000-visits-3-wallen/
